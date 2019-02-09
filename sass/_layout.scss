@@ -3,6 +3,11 @@
 	margin: 8rem auto;
 	background-color: var(--color-grey-light-1);
 	box-shadow: var(--shadow-dark);
+
+	@media only screen and (max-width: $bp-1200) {
+		margin: 0;
+		max-width: 100%;
+	}
 }
 
 .header {
@@ -17,6 +22,10 @@
 
 .content {
 	display: flex;
+
+	@media only screen and (max-width: $bp-900) {
+		flex-direction: column;
+	}
 }
 
 .sidebar {
@@ -25,6 +34,10 @@
 	flex-direction: column;
 	justify-content: space-between;
 	background-color: var(--color-grey-dark-1);
+
+	@media only screen and (max-width: $bp-900) {
+		flex-direction: row;
+	}
 }
 
 .hotel-view {
@@ -38,6 +51,10 @@
 	background-color: var(--color-grey-light-1);
 	border-bottom: var(--line);
 	font-size: 1.4rem;
+
+	@media only screen and (max-width: $bp-900) {
+		padding: 3rem;
+	}
 }
 
 .description {
@@ -46,6 +63,11 @@
 	background-color: white;
 	box-shadow: var(--shadow-light);
 	padding: 3rem;
+
+	@media only screen and (max-width: $bp-900) {
+		padding: 2rem;
+		margin-right: 3rem;
+	}
 }
 
 .user-reviews {
